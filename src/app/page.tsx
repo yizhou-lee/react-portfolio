@@ -1,113 +1,159 @@
-import Image from 'next/image'
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillGithub,
+} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../../public/dev-ed-wave.png";
+import design from "../../public/design.png";
+import code from "../../public/code.png";
+import consulting from "../../public/consulting.png";
+import web1Dark from "../../public/web1-dark.png";
+import web2 from "../../public/web2.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section className="min-h-screen">
+        <div className="text-center p-10">
+          <h2 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl">
+            Yeezo Lee
+          </h2>
+          <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            Developer and sports enthusiast.
+          </h3>
+          <p className="text-md py-5 leading-8 text-slate-800 md:text-xl max-w-xl mx-auto dark:text-slate-400">
+            grhie hier hiegri hio gerhio geg eiohoih ge!
+          </p>
         </div>
-      </div>
+        <div className="text-5xl flex justify-center gap-16 py-3 text-slate-400">
+          <AiFillTwitterCircle />
+          <AiFillLinkedin />
+          <AiFillGithub />
+        </div>
+        <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 sm:w-80 sm:h-80 mt-20 mb-10 overflow-hidden md:h-96 md:w-96">
+          <Image
+            src={deved}
+            alt="My Cartoon Iamge"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <section>
+        <div>
+          <h3 className="text-3xl py-1 dark:text-white">Skills I Possess</h3>
+          <p className="text-md py-2 leading-8 text-slate-400">
+            hfiowe hiofoewif hiofewoif hoifewhoife hoifewhoifw hoiew hoiwe
+            hoiefwio hoiwef oiweh we hfiowe hiofoewif hiofewoif hoifewhoife
+            hoifewhoifw hoiew hoiwe hoiefwio{" "}
+            <span className="text-teal-500">hoiwef</span> oiweh wehfiowe
+            hiofoewif hiofewoif hoifewhoife hoifewhoifw hoiew hoiwe hoiefwio
+            hoiwef oiweh we.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-md py-2 leading-8 text-slate-400">
+            hfiowe hiofoewif hiofewoif hoifewhoife hoifewhoifw hoiew hoiwe
+            hoiefwio <span className="text-teal-500">hoiwef</span> oiweh
+            wehfiowe hiofoewif hiofewoif hoifewhoife hoifewhoifw hoiew hoiwe
+            hoiefwio hoiwef oiweh we.
           </p>
-        </a>
+        </div>
+        <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <Image
+              className="mx-auto"
+              src={design}
+              width={100}
+              height={100}
+              alt="Design Logo"
+            />
+            <h3 className="text-lg font-medium pt-8 pb-2  ">
+              Beautiful Designs
+            </h3>
+            <p className="py-2">
+              Creating elegant designs suited for your needs following core
+              design theory.
+            </p>
+            <h4 className="py-4 text-teal-500">Design Tools I Use</h4>
+            <p className="text-slate-800 py-1">Photoshop</p>
+            <p className="text-slate-800 py-1">Illustrator</p>
+            <p className="text-slate-800 py-1">Figma</p>
+            <p className="text-slate-800 py-1">Indesign</p>
+          </div>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <Image
+              className="mx-auto"
+              src={code}
+              width={100}
+              height={100}
+              alt="Code Logo"
+            />
+            <h3 className="text-lg font-medium pt-8 pb-2">Neat Code</h3>
+            <p className="py-2">
+              Creating elegant designs suited for your needs following core
+              design theory.
+            </p>
+            <h4 className="py-4 text-teal-500">Design Tools I Use</h4>
+            <p className="text-slate-800 py-1">Photoshop</p>
+            <p className="text-slate-800 py-1">Illustrator</p>
+            <p className="text-slate-800 py-1">Figma</p>
+            <p className="text-slate-800 py-1">Indesign</p>
+          </div>
+          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <Image
+              className="mx-auto"
+              src={consulting}
+              width={100}
+              height={100}
+              alt="Consulting Logo"
+            />
+            <h3 className="text-lg font-medium pt-8 pb-2  ">
+              Beautiful Designs
+            </h3>
+            <p className="py-2">
+              Creating elegant designs suited for your needs following core
+              design theory.
+            </p>
+            <h4 className="py-4 text-teal-500">Design Tools I Use</h4>
+            <p className="text-slate-800 py-1">Photoshop</p>
+            <p className="text-slate-800 py-1">Illustrator</p>
+            <p className="text-slate-800 py-1">Figma</p>
+            <p className="text-slate-800 py-1">Indesign</p>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+      <section>
+        <div>
+          <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+          <p className="text-md py-2 leading-8 text-slate-400">
+            hgrioeohi gheriogerhio gioerghoi goierghoier ioerghioer goier.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </div>
+        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1">
+            <Image
+              className="rounded-lg object-cover border-2  border-slate-200 dark:border-slate-500"
+              src={web1Dark}
+              alt="Web1"
+              width={500}
+              height={500}
+              layout="responsive"
+            />
+          </div>
+          <div className="basis-1/3 flex-1">
+            <Image
+              className="rounded-lg object-cover border-2 border-slate-200 dark:border-slate-500"
+              src={web2}
+              alt="Web2"
+              width={500}
+              height={500}
+              layout="responsive"
+            />
+          </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
